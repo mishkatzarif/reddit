@@ -1,0 +1,135 @@
+@font-face {
+  font-family: Noto-B;
+  src: url(../fonts/NotoSans-Bold.ttf);
+}
+@font-face {
+  font-family: Noto-R;
+  src: url(../fonts/NotoSans-Regular.ttf);
+}
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: Noto-R;
+}
+
+a {
+  text-decoration: none;
+}
+
+input:hover,
+input:focus {
+  outline: none;
+}
+body {
+  background-color: gray;
+}
+.main {
+  text-align: center;
+  margin: auto;
+  width: 100%;
+  background-color: white;
+  padding: 10px 10px;
+  position: relative;
+}
+.main::after {
+  clear: both;
+  content: "";
+  display: block;
+}
+.main .logo {
+  float: left;
+  width: 10%;
+}
+.main .logo img {
+  width: 100px;
+  cursor: pointer;
+}
+.main .search {
+  float: left;
+  width: 65%;
+  text-align: center;
+}
+.main .search .magnify {
+  display: inline-block;
+  position: relative;
+}
+.main .search .magnify i {
+  position: absolute;
+  top: -14px;
+  left: 60px;
+  font-size: 20px;
+  color: #989a9c;
+}
+.main .search .input {
+  margin-left: 40px;
+  display: inline-block;
+}
+.main .search .input input {
+  width: 640px;
+  height: 36px;
+  padding: 0 16px 0 44px;
+  background-color: #f6f7f8;
+  border: 1px solid #edeff1;
+  border-radius: 5px;
+}
+.main .search .input input:hover {
+  border-color: #0079d3;
+  transition: 0.01s;
+}
+.main .icon-3 {
+  float: left;
+  width: 25%;
+  text-align: right;
+}
+.main .icon-3 .login {
+  display: inline-block;
+}
+.main .icon-3 .login button {
+  color: #0079d3;
+  border: 1px solid #0079d3;
+  padding: 4px 16px 6px;
+  font-size: 14px;
+  font-weight: 700;
+  font-family: Noto-B;
+  background-color: white;
+  border-radius: 50px;
+  cursor: pointer;
+}
+.main .icon-3 .login button:hover {
+  background-color: #eff8ff;
+}
+.main .icon-3 .signup {
+  display: inline-block;
+  padding: 0px 15px;
+}
+.main .icon-3 .signup button {
+  color: white;
+  border: 1px solid #0079d3;
+  padding: 4px 16px 6px;
+  font-size: 14px;
+  font-weight: 700;
+  font-family: Noto-B;
+  background-color: #0079d3;
+  border-radius: 50px;
+  cursor: pointer;
+}
+.main .icon-3 .signup button:hover {
+  opacity: 0.9;
+  transition: 0.01s;
+}
+.main .icon-3 .icon {
+  display: inline-block;
+  padding-right: 50px;
+}
+.main .icon-3 .icon i {
+  font-size: 20px;
+  color: #989a9c;
+  padding: 0px 5px 0px 0px;
+  cursor: pointer;
+}
+.main .icon-3 .icon i:last-child {
+  font-size: 12px;
+  color: #777;
+  cursor: pointer;
+}
